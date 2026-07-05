@@ -1,8 +1,9 @@
 print("hello world")
 
 def add():
-    x = int(input("type one number:"))
-    y = int(input("type second number"))
-    return x+y
+    global x, y
+    x = int(input("type one number: "))
+    y = int(input("type second number: "))
+    return str(x+y)
 
-add()
+print("\n", add()*(x+y), "\n")
